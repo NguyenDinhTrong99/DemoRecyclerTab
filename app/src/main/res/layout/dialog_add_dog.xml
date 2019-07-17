@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:text="@string/title_new_dog"
+        style="@style/TextTitle"
+         />
+    <TextView
+        android:text="@string/dog_name"
+        style="@style/TextNormal"/>
+    <EditText
+        android:id="@+id/edt_Name_Dog"
+        android:hint="@string/dog_hint_name"
+        android:inputType="text"
+        style="@style/EditTextDog"/>
+
+    <TextView
+        android:text="@string/dog_age"
+        style="@style/TextNormal"/>
+    <EditText
+        android:id="@+id/edt_Age_Dog"
+        android:hint="@string/dog_hint_age"
+        android:inputType="numberSigned"
+        style="@style/EditTextDog"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_Save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/button_save" />
+
+        <Button
+            android:id="@+id/btn_Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/button_cancel" />
+    </LinearLayout>
+</LinearLayout>

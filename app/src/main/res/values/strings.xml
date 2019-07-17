@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DemoRecyclerTab</string>
+    <string name="title_new_dog">New Dog</string>
+    <string name="dog_name">Name</string>
+    <string name="dog_age">Age</string>
+    <string name="dog_hint_name">Input dog name&#8230;</string>
+    <string name="dog_hint_age">Input dog age&#8230;</string>
+    <string name="button_save">Save</string>
+    <string name="button_cancel">Cancel</string>
+</resources>
