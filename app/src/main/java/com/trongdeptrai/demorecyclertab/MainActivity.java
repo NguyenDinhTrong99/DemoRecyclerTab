@@ -9,7 +9,6 @@ import com.trongdeptrai.demorecyclertab.Activity.RecyclerViewActivity;
 import com.trongdeptrai.demorecyclertab.Activity.TabLayoutActivity;
 
 public class MainActivity extends AppCompatActivity {
-    private Intent mIntent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,12 +19,13 @@ public class MainActivity extends AppCompatActivity {
 
     //hàm sử lí sự kiện onclick button ở file xml
     public void OnClickButtons(View v){
+        Intent intent;
         if(v.getId() == R.id.btn_Recycler_View){
-                mIntent = new Intent(MainActivity.this, RecyclerViewActivity.class);
-                startActivity(mIntent);
+            intent = new Intent(MainActivity.this, RecyclerViewActivity.class);
+                startActivity(intent);
         }else if(v.getId() == R.id.btn_Tab_Layout){
-            mIntent = new Intent(MainActivity.this, TabLayoutActivity.class);
-            startActivity(mIntent);
+            intent = new Intent(MainActivity.this, TabLayoutActivity.class);
+            startActivity(intent);
         }
     }
 }

@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -20,7 +19,7 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import com.trongdeptrai.demorecyclertab.Adapter.AdapterDog;
+import com.trongdeptrai.demorecyclertab.Adapter.DogAdapter;
 import com.trongdeptrai.demorecyclertab.Interface.ItemTouchHelperCallBack;
 import com.trongdeptrai.demorecyclertab.Interface.ItemTouchListener;
 import com.trongdeptrai.demorecyclertab.Model.Dog;
@@ -30,7 +29,7 @@ import java.util.ArrayList;
 
 public class RecyclerViewActivity extends AppCompatActivity{
     private RecyclerView mRecyclerView;
-    private AdapterDog adapter;
+    private DogAdapter adapter;
     private ArrayList<Dog> mDogList;
     private ItemTouchHelper.Callback callback;
     @Override
@@ -44,13 +43,12 @@ public class RecyclerViewActivity extends AppCompatActivity{
             public void onMove(int oldPosition, int newPosition) {
                 adapter.onMove(oldPosition, newPosition);
             }
-
             @Override
             public void onSwipe(int position, int direction) {
                 adapter.onSwipe(position, direction);
             }
         });
-        Controll();
+        initView();
     }
 
     // thêm menu
@@ -72,12 +70,12 @@ public class RecyclerViewActivity extends AppCompatActivity{
 
 
 
-    private void Controll() {
+    private void initView() {
         mDogList = new ArrayList<>();
         //thêm dữ liệu mặc định cho mảng
         initData();
-        adapter = new AdapterDog(mDogList, this);
-        mRecyclerView = findViewById(R.id.recycler_dog);
+        adapter = new DogAdapter(mDogList);
+        mRecyclerView = findViewById(R.id.recyclerDog);
         // định dạng lại kích thước layout
         mRecyclerView.setHasFixedSize(true);
         // định dạng bố cục cho recycler - hiển thị theo chiều dọc

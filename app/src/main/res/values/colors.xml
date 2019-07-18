@@ -6,4 +6,6 @@
     <color name="colorBackgroundCardView">#D5D1D0D0</color>
     <color name="colorNameDog">#F00</color>
     <color name="colorAgeDog">#000000</color>
+    <color name="colorTextTab">@android:color/white</color>
+    <color name="colorTextTabSelected">@android:color/holo_red_light</color>
 </resources>

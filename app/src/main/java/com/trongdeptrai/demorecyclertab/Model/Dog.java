@@ -3,27 +3,24 @@ package com.trongdeptrai.demorecyclertab.Model;
 public class Dog {
     private String mName, mAge;
 
-    public Dog(String mName, String mAge) {
-        this.mName = mName;
-        this.mAge = mAge;
+    public Dog(String name, String age) {
+        this.mName = name;
+        this.mAge = age;
     }
 
-    public Dog() {
-    }
-
-    public String getmName() {
+    public String getName() {
         return mName;
     }
 
-    public void setmName(String mName) {
-        this.mName = mName;
+    public void setName(String name) {
+        this.mName = name;
     }
 
-    public String getmAge() {
+    public String getAge() {
         return mAge;
     }
 
-    public void setmAge(String mAge) {
-        this.mAge = mAge;
+    public void setAge(String age) {
+        this.mAge = age;
     }
 }

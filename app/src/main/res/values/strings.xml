@@ -7,4 +7,9 @@
     <string name="dog_hint_age">Input dog age&#8230;</string>
     <string name="button_save">Save</string>
     <string name="button_cancel">Cancel</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_one_fragment">Hello One fragment</string>
+    <string name="hello_two_fragment">Hello Two fragment</string>
+    <string name="hello_three_fragment">Hello Three fragment</string>
 </resources>
